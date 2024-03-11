@@ -1,1 +1,1 @@
-<h1>ShopEsase - ecommerce store by <a href="https://www.linkedin.com/in/majidalirahmati/" target="_blank" rel="noopener noreferrer">Majid Ali</a></h1>
+<h1>ShopEase - ecommerce store by <a href="https://www.linkedin.com/in/majidalirahmati/" target="_blank" rel="noopener noreferrer">Majid Ali</a></h1>
