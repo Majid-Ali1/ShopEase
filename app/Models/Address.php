@@ -5,20 +5,23 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class OrderItem extends Model
+class Address extends Model
 {
     use HasFactory;
-
+    
     protected $fillable = [
         'order_id',
-        'product_id',
-        'quantity',
-        'unit_amount',
-        'total_amount'
+        'first_name',
+        'last_name',
+        'phone',
+        'street_address',
+        'city',
+        'state',
+        'zip_code'
     ];
 
     /**
-     * Get the order that owns the OrderItem
+     * Get the order that owns the Address
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
@@ -27,13 +30,7 @@ class OrderItem extends Model
         return $this->belongsTo(Order::class);
     }
 
-    /**
-     * Get the product that owns the OrderItem
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
-    public function product(): BelongsTo
-    {
-        return $this->belongsTo(Product::class);
+    public function getFullNameAttribute() {
+        return "{$this->first_name} {$this->last_name}";
     }
 }
