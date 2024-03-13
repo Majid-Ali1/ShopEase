@@ -50,6 +50,7 @@ class CategoryResource extends Resource
                         ->image()
                         ->directory('categories'),
                     Toggle::make('is_active')
+                        ->default(true)
                         ->required(),
                 ]),
             ]);
@@ -61,7 +62,9 @@ class CategoryResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('name')
                 ->searchable(),
-                Tables\Columns\ImageColumn::make('image'),
+                Tables\Columns\ImageColumn::make('image')
+                    ->extraImgAttributes(['style' => 'object-fit: contain'])
+                    ->size(100),
                 Tables\Columns\TextColumn::make('slug')
                     ->searchable(),
                 Tables\Columns\IconColumn::make('is_active')

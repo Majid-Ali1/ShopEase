@@ -51,6 +51,7 @@ class BrandResource extends Resource
                     ->image()
                     ->directory('brands'),
                 Toggle::make('is_active')
+                    ->default(true)
                     ->required(),
             ]),
         ]);
@@ -62,7 +63,9 @@ class BrandResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('name')
                 ->searchable(),
-                Tables\Columns\ImageColumn::make('image'),
+                Tables\Columns\ImageColumn::make('image')
+                ->extraImgAttributes(['style' => 'object-fit: contain'])
+                ->size(70),
                 Tables\Columns\TextColumn::make('slug')
                     ->searchable(),
                 Tables\Columns\IconColumn::make('is_active')
