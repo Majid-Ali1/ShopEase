@@ -47,7 +47,8 @@ class CategoryResource extends Resource
                             ->unique(Category::class, 'slug', ignoreRecord: true),
                     ]),
                     FileUpload::make('image')
-                        ->image(),
+                        ->image()
+                        ->directory('categories'),
                     Toggle::make('is_active')
                         ->required(),
                 ]),

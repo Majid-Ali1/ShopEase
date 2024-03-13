@@ -48,7 +48,8 @@ class BrandResource extends Resource
                         ->unique(Brand::class, 'slug', ignoreRecord: true),
                 ]),
                 FileUpload::make('image')
-                    ->image(),
+                    ->image()
+                    ->directory('brands'),
                 Toggle::make('is_active')
                     ->required(),
             ]),
