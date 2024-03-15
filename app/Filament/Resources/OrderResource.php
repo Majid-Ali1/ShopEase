@@ -2,33 +2,34 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\OrderResource\Pages;
-use App\Filament\Resources\OrderResource\RelationManagers;
-use App\Models\Order;
-use App\Models\Product;
-use Faker\Core\Number;
 use Filament\Forms;
-use Filament\Forms\Components\Group;
-use Filament\Forms\Components\Hidden;
-use Filament\Forms\Components\Placeholder;
-use Filament\Forms\Components\Repeater;
-use Filament\Forms\Components\Section;
-use Filament\Forms\Components\Select;
-use Filament\Forms\Components\Textarea;
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\ToggleButtons;
-use Filament\Forms\Form;
+use Filament\Tables;
+use App\Models\Order;
+use Faker\Core\Number;
+use App\Models\Product;
 use Filament\Forms\Get;
 use Filament\Forms\Set;
-use Filament\Resources\Resource;
-use Filament\Tables;
-use Filament\Tables\Columns\TextColumn;
+use Filament\Forms\Form;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-use Illuminate\Support\Number as SupportNumber;
-
+use Filament\Resources\Resource;
+use Filament\Forms\Components\Group;
 use function Laravel\Prompts\select;
+use Filament\Forms\Components\Hidden;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Section;
+use Filament\Forms\Components\Repeater;
+use Filament\Forms\Components\Textarea;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Forms\Components\TextInput;
+use Illuminate\Database\Eloquent\Builder;
+use Filament\Forms\Components\Placeholder;
+use Filament\Forms\Components\ToggleButtons;
+use App\Filament\Resources\OrderResource\Pages;
+use Illuminate\Support\Number as SupportNumber;
+use Illuminate\Database\Eloquent\SoftDeletingScope;
+
+use App\Filament\Resources\OrderResource\RelationManagers;
+use App\Filament\Resources\OrderResource\RelationManagers\AddressRelationManager;
 
 class OrderResource extends Resource
 {
@@ -188,26 +189,26 @@ class OrderResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('user.name')
-                ->sortable()
-                ->searchable()
-                ->label('User Name'),
+                    ->sortable()
+                    ->searchable()
+                    ->label('User Name'),
 
                 TextColumn::make('grand_total')
-                ->numeric()
-                ->sortable()
-                ->searchable()
-                ->money()
-                ->label('Grand Total'),
+                    ->numeric()
+                    ->sortable()
+                    ->searchable()
+                    ->money()
+                    ->label('Grand Total'),
 
                 TextColumn::make('payment_method')
-                ->sortable()
-                ->searchable()
-                ->label('Payment Method'),
+                    ->sortable()
+                    ->searchable()
+                    ->label('Payment Method'),
 
                 TextColumn::make('payment_status')
-                ->sortable()
-                ->searchable()
-                ->label('Payment Status'),
+                    ->sortable()
+                    ->searchable()
+                    ->label('Payment Status'),
 
             ])
             ->filters([
@@ -230,7 +231,7 @@ class OrderResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            AddressRelationManager::class
         ];
     }
 
