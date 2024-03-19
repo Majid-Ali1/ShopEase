@@ -21,13 +21,14 @@ use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Textarea;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
+use Filament\Tables\Columns\SelectColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\ToggleButtons;
 use App\Filament\Resources\OrderResource\Pages;
 use Illuminate\Support\Number as SupportNumber;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
+use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\OrderResource\RelationManagers;
 use App\Filament\Resources\OrderResource\RelationManagers\AddressRelationManager;
 
@@ -197,7 +198,7 @@ class OrderResource extends Resource
                     ->numeric()
                     ->sortable()
                     ->searchable()
-                    ->money()
+                    ->money("PKR")
                     ->label('Grand Total'),
 
                 TextColumn::make('payment_method')
@@ -209,7 +210,15 @@ class OrderResource extends Resource
                     ->sortable()
                     ->searchable()
                     ->label('Payment Status'),
-
+                SelectColumn::make('status')
+                    ->options([
+                        'new' => 'New',
+                        'processing' => 'Processing',
+                        'shipped' => 'Shipped',
+                        'delivered' => 'Delivered',
+                        'cancelled' => 'Cancelled'
+                    ])
+                    ->searchable(),
             ])
             ->filters([
                 //
