@@ -12,7 +12,7 @@
 
                     <!-- Buttons -->
                     <div class="mt-7 grid gap-3 w-full sm:inline-flex">
-                        <a class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                        <a wire:navigate class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                             href="/register">
                             Get started
                             <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24"
@@ -21,7 +21,7 @@
                                 <path d="m9 18 6-6-6-6" />
                             </svg>
                         </a>
-                        <a class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                        <a wire:navigate class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                             href="/contact">
                             Contact sales team
                         </a>
@@ -225,48 +225,48 @@
             <div class="grid grid-cols-1 gap-6 lg:grid-cols-4 md:grid-cols-2">
 
                 <div class="bg-white rounded-lg shadow-md dark:bg-gray-800">
-                    <a href="" class="">
+                    <a wire:navigate href="" class="">
                         <img src="https://i.pinimg.com/originals/a0/97/c3/a097c3c89b6d9a14f52f9515395d5220.png"
                             alt="" class="object-cover w-full h-64 rounded-t-lg">
                     </a>
                     <div class="p-5 text-center">
-                        <a href="" class="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-300">
+                        <a wire:navigate href="" class="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-300">
                             Apple
                         </a>
                     </div>
                 </div>
 
                 <div class="bg-white rounded-lg shadow-md dark:bg-gray-800">
-                    <a href="" class="">
+                    <a wire:navigate href="" class="">
                         <img src="https://i.pinimg.com/originals/1d/35/83/1d35833251dec0ad373ad7cbbbf4f3e2.png"
                             alt="" class="object-cover w-full h-64 rounded-t-lg">
                     </a>
                     <div class="p-5 text-center">
-                        <a href="" class="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-300">
+                        <a wire:navigate href="" class="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-300">
                             Samsung
                         </a>
                     </div>
                 </div>
 
                 <div class="bg-white rounded-lg shadow-md dark:bg-gray-800">
-                    <a href="" class="">
+                    <a wire:navigate href="" class="">
                         <img src="https://salesindia.com/media/codazon_cache/brand/400x400/wysiwyg/codazon/main-content-22/Brand_logo/ONEPLUS_LOGO_.png"
                             alt="" class="object-cover w-full h-64 rounded-t-lg">
                     </a>
                     <div class="p-5 text-center">
-                        <a href="" class="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-300">
+                        <a wire:navigate href="" class="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-300">
                             One Plus
                         </a>
                     </div>
                 </div>
 
                 <div class="bg-white rounded-lg shadow-md dark:bg-gray-800">
-                    <a href="" class="">
+                    <a wire:navigate href="" class="">
                         <img src="https://i.pinimg.com/originals/72/15/96/721596edd1de9db231a385d52a9081f8.png"
                             alt="" class="object-cover w-full h-64 rounded-t-lg">
                     </a>
                     <div class="p-5 text-center">
-                        <a href="" class="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-300">
+                        <a wire:navigate href="" class="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-300">
                             Xiaomi
                         </a>
                     </div>
@@ -304,7 +304,7 @@
         <div class="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
             <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
 
-                <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                <a wire:navigate class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                     href="#">
                     <div class="p-4 md:p-5">
                         <div class="flex justify-between items-center">
@@ -330,7 +330,7 @@
                     </div>
                 </a>
 
-                <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                <a wire:navigate class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                     href="#">
                     <div class="p-4 md:p-5">
                         <div class="flex justify-between items-center">
@@ -356,7 +356,7 @@
                     </div>
                 </a>
 
-                <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                <a wire:navigate class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                     href="#">
                     <div class="p-4 md:p-5">
                         <div class="flex justify-between items-center">
@@ -382,7 +382,7 @@
                     </div>
                 </a>
 
-                <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                <a wire:navigate class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                     href="#">
                     <div class="p-4 md:p-5">
                         <div class="flex justify-between items-center">
@@ -466,7 +466,7 @@
                         <div class="flex px-6 mb-2 md:mb-0">
                             <ul class="flex items-center justify-start mr-4">
                                 <li>
-                                    <a href="#">
+                                    <a wire:navigate href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor"
                                             class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill"
@@ -478,7 +478,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a wire:navigate href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor"
                                             class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill"
@@ -490,7 +490,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a wire:navigate href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor"
                                             class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill"
@@ -502,7 +502,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a wire:navigate href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor"
                                             class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill"
@@ -523,7 +523,7 @@
                             class="flex items-center px-6 space-x-1 text-sm font-medium text-gray-500 dark:text-gray-400">
                             <div class="flex items-center">
                                 <div class="flex mr-3 text-sm text-gray-700 dark:text-gray-400">
-                                    <a href="#">
+                                    <a wire:navigate href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor"
                                             class="w-4 h-4 mr-1 text-blue-400 bi bi-hand-thumbs-up-fill"
@@ -536,7 +536,7 @@
                                     <span>12</span>
                                 </div>
                                 <div class="flex text-sm text-gray-700 dark:text-gray-400">
-                                    <a href="#" class="inline-flex hover:underline">
+                                    <a wire:navigate href="#" class="inline-flex hover:underline">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="w-4 h-4 mr-1 text-blue-400 bi bi-chat"
                                             viewBox="0 0 16 16">
@@ -574,7 +574,7 @@
                         <div class="flex px-6 mb-2 md:mb-0">
                             <ul class="flex items-center justify-start mr-4">
                                 <li>
-                                    <a href="#">
+                                    <a wire:navigate href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor"
                                             class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill"
@@ -586,7 +586,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a wire:navigate href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor"
                                             class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill"
@@ -598,7 +598,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a wire:navigate href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor"
                                             class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill"
@@ -610,7 +610,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a wire:navigate href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor"
                                             class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill"
@@ -631,7 +631,7 @@
                             class="flex items-center px-6 space-x-1 text-sm font-medium text-gray-500 dark:text-gray-400">
                             <div class="flex items-center">
                                 <div class="flex mr-3 text-sm text-gray-700 dark:text-gray-400">
-                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    <a wire:navigate href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                                             height="16" fill="currentColor"
                                             class="w-4 h-4 mr-1 text-blue-400 bi bi-hand-thumbs-up-fill"
                                             viewBox="0 0 16 16">
@@ -642,7 +642,7 @@
                                     <span>12</span>
                                 </div>
                                 <div class="flex text-sm text-gray-700 dark:text-gray-400">
-                                    <a href="#" class="inline-flex hover:underline">
+                                    <a wire:navigate href="#" class="inline-flex hover:underline">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="w-4 h-4 mr-1 text-blue-400 bi bi-chat"
                                             viewBox="0 0 16 16">
@@ -680,7 +680,7 @@
                         <div class="flex px-6 mb-2 md:mb-0">
                             <ul class="flex items-center justify-start mr-4">
                                 <li>
-                                    <a href="#">
+                                    <a wire:navigate href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor"
                                             class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill"
@@ -692,7 +692,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a wire:navigate href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor"
                                             class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill"
@@ -704,7 +704,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a wire:navigate href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor"
                                             class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill"
@@ -716,7 +716,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a wire:navigate href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor"
                                             class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill"
@@ -737,7 +737,7 @@
                             class="flex items-center px-6 space-x-1 text-sm font-medium text-gray-500 dark:text-gray-400">
                             <div class="flex items-center">
                                 <div class="flex mr-3 text-sm text-gray-700 dark:text-gray-400">
-                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    <a wire:navigate href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                                             height="16" fill="currentColor"
                                             class="w-4 h-4 mr-1 text-blue-400 bi bi-hand-thumbs-up-fill"
                                             viewBox="0 0 16 16">
@@ -748,7 +748,7 @@
                                     <span>12</span>
                                 </div>
                                 <div class="flex text-sm text-gray-700 dark:text-gray-400">
-                                    <a href="#" class="inline-flex hover:underline">
+                                    <a wire:navigate href="#" class="inline-flex hover:underline">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="w-4 h-4 mr-1 text-blue-400 bi bi-chat"
                                             viewBox="0 0 16 16">
@@ -786,7 +786,7 @@
                         <div class="flex px-6 mb-2 md:mb-0">
                             <ul class="flex items-center justify-start mr-4">
                                 <li>
-                                    <a href="#">
+                                    <a wire:navigate href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor"
                                             class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill"
@@ -798,7 +798,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a wire:navigate href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor"
                                             class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill"
@@ -810,7 +810,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a wire:navigate href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor"
                                             class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill"
@@ -822,7 +822,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a wire:navigate href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor"
                                             class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill"
@@ -843,7 +843,7 @@
                             class="flex items-center px-6 space-x-1 text-sm font-medium text-gray-500 dark:text-gray-400">
                             <div class="flex items-center">
                                 <div class="flex mr-3 text-sm text-gray-700 dark:text-gray-400">
-                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    <a wire:navigate href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                                             height="16" fill="currentColor"
                                             class="w-4 h-4 mr-1 text-blue-400 bi bi-hand-thumbs-up-fill"
                                             viewBox="0 0 16 16">
@@ -854,7 +854,7 @@
                                     <span>12</span>
                                 </div>
                                 <div class="flex text-sm text-gray-700 dark:text-gray-400">
-                                    <a href="#" class="inline-flex hover:underline">
+                                    <a wire:navigate href="#" class="inline-flex hover:underline">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="w-4 h-4 mr-1 text-blue-400 bi bi-chat"
                                             viewBox="0 0 16 16">
