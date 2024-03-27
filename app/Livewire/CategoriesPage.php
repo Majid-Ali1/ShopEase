@@ -3,6 +3,8 @@
 namespace App\Livewire;
 
 use Livewire\Component;
+use Livewire\Attributes\Title;
+#[Title("Categories | Shope Ease")]
 
 class CategoriesPage extends Component
 {

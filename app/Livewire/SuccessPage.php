@@ -3,6 +3,8 @@
 namespace App\Livewire;
 
 use Livewire\Component;
+use Livewire\Attributes\Title;
+#[Title("Order Success | Shope Ease")]
 
 class SuccessPage extends Component
 {

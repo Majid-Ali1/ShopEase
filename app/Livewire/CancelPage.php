@@ -3,6 +3,8 @@
 namespace App\Livewire;
 
 use Livewire\Component;
+use Livewire\Attributes\Title;
+#[Title("Cancel Order | Shope Ease")]
 
 class CancelPage extends Component
 {
