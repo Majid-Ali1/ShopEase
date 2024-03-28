@@ -71,7 +71,7 @@
 				<ul class="grid w-full gap-6 md:grid-cols-2">
 					<li>
 						<input class="hidden peer" id="hosting-small" name="hosting" required="" type="radio" value="hosting-small" />
-						<label class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700" for="hosting-small">
+						<label class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700" for="hosting-small">
 							<div class="block">
 								<div class="w-full text-lg font-semibold">
 									Cash on Delivery
@@ -85,7 +85,7 @@
 					</li>
 					<li>
 						<input class="hidden peer" id="hosting-big" name="hosting" type="radio" value="hosting-big">
-						<label class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700" for="hosting-big">
+						<label class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700" for="hosting-big">
 							<div class="block">
 								<div class="w-full text-lg font-semibold">
 									Stripe
@@ -160,7 +160,7 @@
 								<p class="text-sm font-medium text-gray-900 truncate dark:text-white">
 									Apple iPhone 15 Pro Max
 								</p>
-								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
+								<p class="text-sm text-gray-500 truncate dark:text-gray-300">
 									Quantity: 1
 								</p>
 							</div>
@@ -179,7 +179,7 @@
 								<p class="text-sm font-medium text-gray-900 truncate dark:text-white">
 									Apple iPhone 15 Pro Max
 								</p>
-								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
+								<p class="text-sm text-gray-500 truncate dark:text-gray-300">
 									Quantity: 1
 								</p>
 							</div>
@@ -198,7 +198,7 @@
 								<p class="text-sm font-medium text-gray-900 truncate dark:text-white">
 									Apple iPhone 15 Pro Max
 								</p>
-								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
+								<p class="text-sm text-gray-500 truncate dark:text-gray-300">
 									Quantity: 1
 								</p>
 							</div>
