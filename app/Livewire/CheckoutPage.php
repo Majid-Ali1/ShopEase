@@ -4,7 +4,7 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use Livewire\Attributes\Title;
-#[Title("Checkout | Shope Ease")]
+#[Title("Checkout | ShopEase")]
 
 class CheckoutPage extends Component
 {

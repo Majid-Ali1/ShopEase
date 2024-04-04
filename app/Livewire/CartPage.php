@@ -4,7 +4,7 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use Livewire\Attributes\Title;
-#[Title("Cart | Shope Ease")]
+#[Title("Cart | ShopEase")]
 
 class CartPage extends Component
 {

@@ -4,7 +4,7 @@ namespace App\Livewire\Auth;
 
 use Livewire\Component;
 use Livewire\Attributes\Title;
-#[Title("Reset Password | Shope Ease")]
+#[Title("Reset Password | ShopEase")]
 
 class ResetPasswordPage extends Component
 {

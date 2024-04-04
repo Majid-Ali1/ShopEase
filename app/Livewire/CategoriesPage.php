@@ -5,7 +5,7 @@ namespace App\Livewire;
 use Livewire\Component;
 use App\Models\Category;
 use Livewire\Attributes\Title;
-#[Title("Categories | Shope Ease")]
+#[Title("Categories | ShopEase")]
 
 class CategoriesPage extends Component
 {

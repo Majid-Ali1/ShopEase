@@ -4,7 +4,7 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use Livewire\Attributes\Title;
-#[Title("Order Detail | Shope Ease")]
+#[Title("Order Detail | ShopEase")]
 
 class MyOrderDetailPage extends Component
 {

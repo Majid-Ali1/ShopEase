@@ -9,7 +9,7 @@ use Livewire\Component;
 use App\Models\Category;
 use Livewire\WithPagination;
 use Livewire\Attributes\Title;
-#[Title("Products | Shope Ease")]
+#[Title("Products | ShopEase")]
 
 class ProductsPage extends Component
 {

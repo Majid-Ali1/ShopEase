@@ -4,7 +4,7 @@ namespace App\Livewire\Auth;
 
 use Livewire\Component;
 use Livewire\Attributes\Title;
-#[Title("Register | Shope Ease")]
+#[Title("Register | ShopEase")]
 
 class RegisterPage extends Component
 {

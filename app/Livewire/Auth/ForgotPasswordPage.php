@@ -4,7 +4,7 @@ namespace App\Livewire\Auth;
 
 use Livewire\Component;
 use Livewire\Attributes\Title;
-#[Title("Forgot Password | Shope Ease")]
+#[Title("Forgot Password | ShopEase")]
 
 class ForgotPasswordPage extends Component
 {
