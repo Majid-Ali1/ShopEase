@@ -19,6 +19,12 @@ class ProductsPage extends Component
 
     #[Url]
     public $selected_brands = [];
+    
+    #[Url]
+    public $featured;
+    
+    #[Url]
+    public $on_sale;
 
     public function render()
     {
@@ -30,6 +36,14 @@ class ProductsPage extends Component
         
         if (!empty($this->selected_brands)) {
             $productQuery->whereIn('brand_id', $this->selected_brands);
+        }
+
+        if ($this->featured) {
+            $productQuery->where('is_featured', 1);
+        }
+
+        if ($this->on_sale) {
+            $productQuery->where('on_sale', 1);
         }
         
         $brand = Brand::where('is_active', 1)->get();

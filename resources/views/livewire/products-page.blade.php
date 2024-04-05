@@ -37,14 +37,14 @@
               <div class="w-16 pb-2 mb-6 border-b border-rose-600 dark:border-gray-400"></div>
               <ul>
                 <li class="mb-4">
-                  <label for="in_stock" class="flex items-center dark:text-gray-300">
-                    <input id="in_stock" type="checkbox" name="in_stock" class="w-4 h-4 mr-2">
-                    <span class="text-lg dark:text-gray-300">In Stock</span>
+                  <label for="featured" class="flex items-center dark:text-gray-300">
+                    <input id="featured" type="checkbox" wire:model.live="featured" value="1" class="w-4 h-4 mr-2">
+                    <span class="text-lg dark:text-gray-300">Featured</span>
                   </label>
                 </li>
                 <li class="mb-4">
                   <label for="on_sale" class="flex items-center dark:text-gray-300">
-                    <input id="on_sale" name="on_sale" type="checkbox" class="w-4 h-4 mr-2">
+                    <input id="on_sale" wire:model.live="on_sale" value="1" type="checkbox" class="w-4 h-4 mr-2">
                     <span class="text-lg dark:text-gray-300">On Sale</span>
                   </label>
                 </li>
