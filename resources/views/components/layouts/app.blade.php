@@ -8,7 +8,7 @@
         @vite(['resources\css\app.css', 'resources\js\app.js'])
         @livewireStyles
     </head>
-    <body class="bg-slate-200 dark:bg-slate-700 dark:text-gray-300">
+    <body class="dark:bg-slate-700 dark:text-gray-300 bg-slate-300">
         @livewire('partials.navbar')
         <main>
             {{ $slot }}
