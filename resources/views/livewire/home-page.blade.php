@@ -226,7 +226,7 @@
                 @foreach ($brands as $brand)
                     <div class="bg-white rounded-lg shadow-md dark:bg-gray-800" wire::key="{{$brand->id}}">
                         <a wire:navigate href="#" class="p-5 block">
-                            <img src="{{ url('storage').'/'.$brand->image }}" alt="{{$brand->name}}" class="object-cover w-full rounded-t-lg">
+                            <img src="{{ asset('storage/'.$brand->image) }}" alt="{{$brand->name}}" class="object-cover w-full rounded-t-lg">
                         </a>
                         <div class="p-5 text-center">
                             <a wire:navigate href="" class="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-300">
@@ -274,7 +274,7 @@
                             <div class="flex justify-between items-center">
                                 <div class="flex items-center">
                                     <img class="h-[2.375rem] w-[2.375rem] rounded-full object-cover"
-                                        src="{{url('storage').'/'.$category->image}}"
+                                        src="{{asset('storage/'.$category->image)}}"
                                         alt="{{$category->name}}">
                                     <div class="ms-3">
                                         <h3
