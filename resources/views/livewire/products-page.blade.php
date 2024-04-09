@@ -75,7 +75,7 @@
               </div>
             </div>
             <div class="flex flex-wrap items-center">
-              @if (!empty($products))
+              @if ($products->count() > 0)
                   @foreach ($products as $product)
                     <div class="w-full px-3 mb-6 sm:w-1/2 md:w-1/3">
                     <div class="border border-gray-300 dark:border-gray-700">
