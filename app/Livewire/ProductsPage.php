@@ -25,6 +25,11 @@ class ProductsPage extends Component
     
     #[Url]
     public $on_sale;
+    
+    #[Url]
+    public $sort = 'latest';
+
+    public $price_range = 100000;
 
     public function render()
     {
@@ -44,6 +49,18 @@ class ProductsPage extends Component
 
         if ($this->on_sale) {
             $productQuery->where('on_sale', 1);
+        }
+
+        if ($this->price_range) {
+            $productQuery->whereBetween('price', [0, $this->price_range]);
+        }
+
+        if ($this->sort == "latest") {
+            $productQuery->latest();
+        }
+
+        if ($this->sort == "price") {
+            $productQuery->orderBy("price");
         }
         
         $brand = Brand::where('is_active', 1)->get();
