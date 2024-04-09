@@ -71,7 +71,7 @@ class CartManagement {
        if(!$cart_items){
             $cart_items = [];
        }
-
+       
        return $cart_items;
     }
     
