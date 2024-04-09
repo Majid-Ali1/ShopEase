@@ -106,6 +106,8 @@
                     </div>
                   </div>
                 @endforeach
+              @else
+                  <p class="text-xl dakr:text-gray-100">No product(s) found.</p>
               @endif
   
             </div>
