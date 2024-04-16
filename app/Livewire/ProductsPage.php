@@ -2,19 +2,22 @@
 
 namespace App\Livewire;
 
-use App\Helpers\CartManagement;
-use App\Livewire\Partials\Navbar;
 use App\Models\Brand;
 use App\Models\Product;
-use Livewire\Attributes\Url;
 use Livewire\Component;
 use App\Models\Category;
+use Jantinnerezo\LivewireAlert\LivewireAlert;
+use Livewire\Attributes\Url;
 use Livewire\WithPagination;
 use Livewire\Attributes\Title;
+use App\Helpers\CartManagement;
+use App\Livewire\Partials\Navbar;
 #[Title("Products | ShopEase")]
 
 class ProductsPage extends Component
 {
+    use LivewireAlert;
+    
     use WithPagination;
     #[Url]
     public $selected_categories = [];
@@ -39,6 +42,13 @@ class ProductsPage extends Component
         $total_count = CartManagement::addItemsToCart($product_id);
 
         $this->dispatch('update-cart-amount', total_count: $total_count)->to(Navbar::class);
+
+        $this->alert('success', 'Product added to cart successfully!', [
+            'position' => 'bottom-end',
+            'timer' => '5000',
+            'toast' => true,
+        ]);
+        
     }
 
     public function render()
