@@ -34,20 +34,22 @@ class ProductsPage extends Component
     #[Url]
     public $sort = 'latest';
 
-    public $price_range = 100000;
+    public $price_range = 1000000;
 
     // add product to cart method
     public function addToCart($product_id){
         // dd($product_id);
         $total_count = CartManagement::addItemsToCart($product_id);
 
+        $this->alert('success', 'Product added to cart successfully!', [
+            'position' => 'center',
+            'timer' => 3000,
+            'toast' => true,
+            'timerProgressBar' => true,
+        ]);
+        
         $this->dispatch('update-cart-amount', total_count: $total_count)->to(Navbar::class);
 
-        $this->alert('success', 'Product added to cart successfully!', [
-            'position' => 'bottom-end',
-            'timer' => '5000',
-            'toast' => true,
-        ]);
         
     }
 
